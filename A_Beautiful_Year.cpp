@@ -1,20 +1,26 @@
 #include<bits/stdc++.h>
-uisng namespace std;
 
-int main(){
+using namespace std;
 
-    int y;
+int main() {
+    int year;
+    cin >> year;
 
-    cin >> y; // year
+    while(1){
+        year++;
+        string year_str = to_string(year);
 
-    if(y%4==0 && y%100!=0 || y%400==0){
-        cout << "12.09." << y << endl;
+        set<char> year_set(year_str.begin(), year_str.end());
+
+        int len1 = year_str.length();
+        int len2 = year_set.size();
+
+        if(len1 == len2){
+            cout << year << endl;
+            break;
+        }
+
     }
-    else{
-        cout << "13.09." << y << endl;
-    }
-
-    
 
     return 0;
 }

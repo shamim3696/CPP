@@ -15,7 +15,7 @@ int main(){
     while(N>0){
         int rem = N % 10;
         N = N / 10;
-        double powValue = pow(B, power);
+        int powValue = pow(B, power);
         int value = rem * powValue;
         power++;
         ans += value;

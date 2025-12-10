@@ -8,7 +8,7 @@ int main(){
     int B,N;
     cout << "Enter two integers: "<<endl;;
     cin>>B>>N;
-
+   
     int ans = 0;
     int power = 0;
     
